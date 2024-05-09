@@ -10,4 +10,4 @@ sum(is.na(datos))
 miss_var_summary(datos)
 dim(datos)
 length(unique(datos$Invoice))
-
+#dif.
