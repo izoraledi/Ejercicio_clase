@@ -10,4 +10,7 @@ sum(is.na(datos))
 miss_var_summary(datos)
 dim(datos)
 length(unique(datos$Invoice))
-#dif.
+#10. Calcula el precio medio de producto por pedido
+diez<-datos%>%
+  group_by(Description)%>%
+  summarize(media=mean(Price))
